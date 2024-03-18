@@ -51,7 +51,12 @@ lorem ipsum dolor sit amet consectetur adipiscing elit
 <div align="center">
 
 ## Commands
-  Lorem ipsum.
+
+</div>
+
+lorem ipsum dolor sit amet consectetur adipiscing elit
+
+<div align="center">
 
 ## Contributing
 
@@ -68,7 +73,7 @@ Pull requests, issue reports and feature requests are welcome. Any contributions
 [GNU GPL](https://choosealicense.com/licenses/gpl-3.0/)
 
 [release-shield]: https://img.shields.io/badge/Python-3.9%20%7C%203.10-blue
-[release-url]: https://www.python.org/downloads/
+[release-url]: https://github.com/Luffy404/JustSomeAdditions/releases
 [total-shield]: https://tokei.rs/b1/github/Luffy404/JustSomeAdditions?category=lines
 [total-url]: https://github.com/Luffy404/JustSomeAdditions/tree/master
 [contributors-shield]: https://img.shields.io/github/contributors/Luffy404/JustSomeAdditions.svg?style=flat-square
