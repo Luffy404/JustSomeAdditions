@@ -72,7 +72,7 @@ Pull requests, issue reports and feature requests are welcome. Any contributions
 
 [GNU GPL](https://choosealicense.com/licenses/gpl-3.0/)
 
-[release-shield]: https://img.shields.io/badge/Python-3.9%20%7C%203.10-blue
+[release-shield]: https://img.shields.io/github/release/Luffy404/JustSomeAdditions.svg
 [release-url]: https://github.com/Luffy404/JustSomeAdditions/releases
 [total-shield]: https://tokei.rs/b1/github/Luffy404/JustSomeAdditions?category=lines
 [total-url]: https://github.com/Luffy404/JustSomeAdditions/tree/master
