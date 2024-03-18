@@ -1,6 +1,7 @@
 package de.madluffy.justsomeadditions;
 
 import com.mojang.logging.LogUtils;
+import de.madluffy.justsomeadditions.init.ItemInit;
 import de.madluffy.justsomeadditions.utils.Config;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.world.item.CreativeModeTab;
@@ -47,6 +48,7 @@ public class JustSomeAdditions {
         ITEMS.register(modEventBus);
         // Register the Deferred Register to the mod event bus so tabs get registered
         CREATIVE_MODE_TABS.register(modEventBus);
+        ItemInit.VANILLA_ITEMS.register(modEventBus);
 
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);
