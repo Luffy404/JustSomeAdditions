@@ -6,7 +6,7 @@ on:
       - "master"
 
 jobs:
-  pre-release:
+  auto-release:
     name: "Pre Release"
     runs-on: "ubuntu-latest"
 
