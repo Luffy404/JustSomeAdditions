@@ -1,7 +1,7 @@
 {
     "pack": {
-        "description": "justsomeadditions resources",
-        "pack_format": 18
-        ,"forge:server_data_pack_format": 12
+        "description": "justsomeadditionsport resources",
+        "pack_format": 15,
+        "forge:server_data_pack_format": 12
     }
 }
