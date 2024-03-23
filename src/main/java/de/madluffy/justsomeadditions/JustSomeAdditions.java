@@ -3,6 +3,7 @@ package de.madluffy.justsomeadditions;
 import com.mojang.logging.LogUtils;
 import de.madluffy.justsomeadditions.init.vanilla.EnchantmentInit;
 import de.madluffy.justsomeadditions.init.vanilla.ItemInit;
+import de.madluffy.justsomeadditions.utils.Config;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;

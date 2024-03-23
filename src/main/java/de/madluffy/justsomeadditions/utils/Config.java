@@ -1,5 +1,6 @@
-package de.madluffy.justsomeadditions;
+package de.madluffy.justsomeadditions.utils;
 
+import de.madluffy.justsomeadditions.JustSomeAdditions;
 import net.minecraftforge.common.ForgeConfigSpec;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
