@@ -1,4 +1,4 @@
-package de.madluffy.justsomeadditions.init;
+package de.madluffy.justsomeadditions.init.vanilla;
 
 import de.madluffy.justsomeadditions.items.InfinityBowItem;
 import net.minecraft.world.item.Item;

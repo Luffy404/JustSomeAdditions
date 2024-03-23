@@ -1,6 +1,5 @@
-package de.madluffy.justsomeadditions.utils;
+package de.madluffy.justsomeadditions;
 
-import de.madluffy.justsomeadditions.JustSomeAdditions;
 import net.minecraftforge.common.ForgeConfigSpec;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
@@ -16,14 +15,19 @@ public class Config {
             .comment("Whether the Infinity Enchantment consumes tipped arrows")
             .define("trueInfinity", true);
 
+    private static final ForgeConfigSpec.BooleanValue UNIVERSAL_BOW_ENCH = BUILDER
+            .comment("Whether the Infinity Enchantment can be mixed with Mending")
+            .define("universalBowEnch", true);
 
     public static final ForgeConfigSpec SPEC = BUILDER.build();
 
     public static boolean trueInfinity;
+    public static boolean universalBowEnch;
 
     @SubscribeEvent
-    static void onLoad(final ModConfigEvent event) {
+    void onLoad(final ModConfigEvent event) {
         trueInfinity = INFINITE_BOW.get();
+        universalBowEnch = UNIVERSAL_BOW_ENCH.get();
 
     }
 }
