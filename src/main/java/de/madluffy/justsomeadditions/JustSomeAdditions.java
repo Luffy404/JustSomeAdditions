@@ -40,29 +40,35 @@ public class JustSomeAdditions {
     public JustSomeAdditions() {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
+
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
 
-        // Register the Deferred Register to the mod event bus so blocks get registered
-        BLOCKS.register(modEventBus);
-        // Register the Deferred Register to the mod event bus so items get registered
-        ITEMS.register(modEventBus);
-        // Register the Deferred Register to the mod event bus so tabs get registered
-        CREATIVE_MODE_TABS.register(modEventBus);
-        if (Config.trueInfinity) {
-            ItemInit.VANILLA_ITEMS.register(modEventBus);
-        }
-        if (Config.universalBowEnch){
-            EnchantmentInit.VANILLA_ENCHANTMENTS.register(modEventBus);
-        }
-        // Register ourselves for server and other game events we are interested in
-        MinecraftForge.EVENT_BUS.register(this);
         // Register our mod's ForgeConfigSpec so that Forge can create and load the config file for us
         ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON, Config.SPEC);
+        // Register the Deferred Register to the mod event bus so blocks get registered
+        BLOCKS.register(modEventBus);
+        LOGGER.debug("Registered Blocks");
+        // Register the Deferred Register to the mod event bus so items get registered
+        ITEMS.register(modEventBus);
+        LOGGER.debug("Registered Items");
+        // Register the Deferred Register to the mod event bus so tabs get registered
+        CREATIVE_MODE_TABS.register(modEventBus);
+        LOGGER.debug("Registered Creative Mode Tabs");
+        ItemInit.VANILLA_ITEMS.register(modEventBus);
+        LOGGER.debug("Registered Vanilla Items");
+        ItemInit.INFINITY_BOW.register(modEventBus);
+        LOGGER.debug("Registered Infinity Bow");
+        EnchantmentInit.VANILLA_ENCHANTMENTS.register(modEventBus);
+        LOGGER.debug("Registered Vanilla Enchantments");
+
+        // Register ourselves for server and other game events we are interested in
+        MinecraftForge.EVENT_BUS.register(this);
     }
 
     private void commonSetup(final FMLCommonSetupEvent event) {
         // Some common setup code
+
     }
 
 

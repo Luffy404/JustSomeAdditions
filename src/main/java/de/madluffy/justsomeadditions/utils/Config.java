@@ -12,23 +12,22 @@ import net.minecraftforge.fml.event.config.ModConfigEvent;
 public class Config {
     private static final ForgeConfigSpec.Builder BUILDER = new ForgeConfigSpec.Builder();
 
-    private static final ForgeConfigSpec.BooleanValue INFINITE_BOW = BUILDER
-            .comment("Whether the Infinity Enchantment consumes tipped arrows")
-            .define("trueInfinity", true);
-
-    private static final ForgeConfigSpec.BooleanValue UNIVERSAL_BOW_ENCH = BUILDER
-            .comment("Whether the Infinity Enchantment can be mixed with Mending")
-            .define("universalBowEnch", true);
+//    private static final ForgeConfigSpec.BooleanValue INFINITE_BOW = BUILDER
+//            .comment("Whether the Infinity Enchantment consumes tipped arrows")
+//            .define("trueInfinity", true);
+//
+//    private static final ForgeConfigSpec.BooleanValue UNIVERSAL_BOW_ENCH = BUILDER
+//            .comment("Whether the Infinity Enchantment can be mixed with Mending")
+//            .define("universalBowEnch", true);
 
     public static final ForgeConfigSpec SPEC = BUILDER.build();
 
-    public static boolean trueInfinity;
-    public static boolean universalBowEnch;
+//    public static boolean trueInfinity;
+//    public static boolean universalBowEnch;
 
     @SubscribeEvent
     void onLoad(final ModConfigEvent event) {
-        trueInfinity = INFINITE_BOW.get();
-        universalBowEnch = UNIVERSAL_BOW_ENCH.get();
-
+//        trueInfinity = INFINITE_BOW.get();
+//        universalBowEnch = UNIVERSAL_BOW_ENCH.get();
     }
 }
